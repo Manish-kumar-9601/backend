@@ -3,7 +3,7 @@ import fs from 'node:fs'
 cloudinary.config({
     cloud_name: 'diwp1dxi1',
     api_key: process.env.CLOUDINARY_API_KEY,
-    api_secret: process.env.CLOUDINARY_API_SERECT
+    api_secret: process.env.CLOUDINARY_API_SECRET
 });
 
 const uploadOnCloudinary = async (localFilePath) =>
@@ -24,7 +24,7 @@ const uploadOnCloudinary = async (localFilePath) =>
 
 
 }
-export default cloudinary
+export default uploadOnCloudinary 
 // cloudinary.uploader.upload("https://upload.wikimedia.org/wikipedia/commons/a/ae/Olympic_flag.jpg",
 //   { public_id: "olympic_flag" },
 //   function(error, result) {console.log(result); });
